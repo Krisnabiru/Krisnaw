@@ -978,7 +978,7 @@ def clientBot(op):
 								ret_ += "\n╠ Jumlah Pending : {}".format(groupPending)
 								ret_ += "\n╠ Group Qr : {}".format(groupQr)
 								ret_ += "\n╠ Group Ticket : {}".format(groupTicket)
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMention(to, str(ret_), [groupCreator])
 							except:
@@ -990,7 +990,7 @@ def clientBot(op):
 								ret_ += "\n╠ Jumlah Pending : {}".format(groupPending)
 								ret_ += "\n╠ Group Qr : {}".format(groupQr)
 								ret_ += "\n╠ Group Ticket : {}".format(groupTicket)
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMessage(to, str(ret_))
 						elif cmd.startswith("groupbroadcast: "):
@@ -1185,7 +1185,7 @@ def clientBot(op):
 							result += "\n╠ Following : {}".format(data["result"]["following"])
 							result += "\n╠ Private : {}".format(data["result"]["private"])
 							result += "\n╠ Post : {}".format(data["result"]["mediacount"])
-							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 							client.sendImageWithURL(to, data["result"]["url"])
 							client.sendMessage(to, result)
 						elif cmd.startswith("instastory "):
@@ -1210,7 +1210,7 @@ def clientBot(op):
 							result += "\n╠ Author : {}".format(data["result"]["author"])
 							result += "\n╠ Category : {}".format(data["result"]["category"])
 							result += "\n╠ Quote : {}".format(data["result"]["quote"])
-							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 							client.sendMessage(to, result)
 						elif cmd.startswith("say-"):
 							sep = text.split("-")
@@ -1290,7 +1290,7 @@ def clientBot(op):
 									ret_ += "\n╠ Album : {}".format(str(data["result"]["album"]))
 									ret_ += "\n╠ Size : {}".format(str(data["result"]["size"]))
 									ret_ += "\n╠ Link : {}".format(str(data["result"]["mp3"][0]))
-									ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+									ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 									client.sendImageWithURL(to, str(data["result"]["img"]))
 									client.sendMessage(to, str(ret_))
 									client.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
@@ -1393,7 +1393,7 @@ def clientBot(op):
 							ret_ += "\n╠ STICKER PACKAGES ID : {}".format(pkg_id)
 							ret_ += "\n╠ STICKER VERSION : {}".format(stk_ver)
 							ret_ += "\n╠ STICKER URL : line://shop/detail/{}".format(pkg_id)
-							ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+							ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 							client.sendMessage(to, str(ret_))
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
@@ -1406,7 +1406,7 @@ def clientBot(op):
 								ret_ += "\n╠ Bio : {}".format(str(contact.statusMessage))
 								ret_ += "\n╠ Gambar Profile : http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
 								ret_ += "\n╠ Gambar Cover : {}".format(str(cover))
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
 								client.sendMessage(to, str(ret_))
 							except:
@@ -1445,7 +1445,7 @@ def clientBot(op):
 								if "text" in msg.contentMetadata:
 									text = "\n╠ Tulisan : {}".format(str(msg.contentMetadata["text"]))
 									ret_ += text
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendMessage(to, str(ret_))
 							except:
 								client.sendMessage(to, "Post tidak valid")
@@ -1547,7 +1547,7 @@ def clientBot(op):
 								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Text"
 								ret_ += "\n╠ Text : {}".format(unsend[sender]["text"])
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendMention(to, ret_, [contact.mid])
 								del unsend[sender]
 							except:
@@ -1561,7 +1561,7 @@ def clientBot(op):
 								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Image"
 								ret_ += "\n╠ Text : None"
-								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendMention(to, ret_, [contact.mid])
 								client.sendImage(to, unsend[sender]["image"])
 								client.deleteFile(unsend[sender]["image"])
