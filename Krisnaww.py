@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# Thanks to Krisnabiru
+# Ig : Krisnabiru
+# Support by HelloWorld
 
 from line.linepy import *
 from gtts import gTTS
@@ -128,35 +131,46 @@ def menuHelp():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuHelp =	"╔══[ Help Message ]" + "\n" + \
+	menuHelp =		"╔══════════════" + "\n" + \
+				"║              􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿" + "\n" + \
+				"╠══════════════" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Keyword ]" + "\n" + \
+				"╔═╝" + "\n" + \
 				"╠ " + key + "Help" + "\n" + \
 				"╠ " + key + "Translate" + "\n" + \
 				"╠ " + key + "TextToSpeech" + "\n" + \
-				"╠══[ Status Command ]" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Status Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
 				"╠ MyKey" + "\n" + \
 				"╠ " + key + "Logout" + "\n" + \
 				"╠ " + key + "Restart" + "\n" + \
 				"╠ " + key + "Runtime" + "\n" + \
 				"╠ " + key + "Speed" + "\n" + \
 				"╠ " + key + "Status" + "\n" + \
-				"╠══[ Settings Command ]" + "\n" + \
-				"╠ SetKey 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoAdd 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoJoin 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoJoinTicket 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoRead 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoRespon 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckContact 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckPost 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckSticker 「On/Off」" + "\n" + \
-				"╠ " + key + "DetectUnsend 「On/Off」" + "\n" + \
-				"╠ " + key + "SetKey: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoAddMessage: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoResponMessage: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
-				"╠══[ Self Command ]" + "\n" + \
-				"╠ " + key + "ChangeName: 「Text」" + "\n" + \
-				"╠ " + key + "ChangeBio: 「Text」" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Settings Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
+				"╠ SetKey 「On / Off」" + "\n" + \
+				"╠ " + key + "AutoAdd 「On / Off」" + "\n" + \
+				"╠ " + key + "AutoJoin 「On / Off」" + "\n" + \
+				"╠ " + key + "AutoJoinTicket 「On / Off」" + "\n" + \
+				"╠ " + key + "AutoRead 「On / Off」" + "\n" + \
+				"╠ " + key + "AutoRespon 「On / Off」" + "\n" + \
+				"╠ " + key + "CheckContact 「On / Off」" + "\n" + \
+				"╠ " + key + "CheckPost 「On / Off」" + "\n" + \
+				"╠ " + key + "CheckSticker 「On / Off」" + "\n" + \
+				"╠ " + key + "DetectUnsend 「On / Off」" + "\n" + \
+				"╠ " + key + "SetKey: 「Krisnabiru」" + "\n" + \
+				"╠ " + key + "SetAutoAddMessage: 「Krisnabiru」" + "\n" + \
+				"╠ " + key + "SetAutoResponMessage: 「Krisnabiru」" + "\n" + \
+				"╠ " + key + "SetAutoJoinMessage: 「Krisnabiru」" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Self Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
+				"╠ " + key + "ChangeName: 「Krisnabiru」" + "\n" + \
+				"╠ " + key + "ChangeBio: 「Krisnabiru」" + "\n" + \
 				"╠ " + key + "Me" + "\n" + \
 				"╠ " + key + "MyMid" + "\n" + \
 				"╠ " + key + "MyName" + "\n" + \
@@ -165,22 +179,24 @@ def menuHelp():
 				"╠ " + key + "MyVideoProfile" + "\n" + \
 				"╠ " + key + "MyCover" + "\n" + \
 				"╠ " + key + "MyProfile" + "\n" + \
-				"╠ " + key + "GetMid @Mention" + "\n" + \
-				"╠ " + key + "GetName @Mention" + "\n" + \
-				"╠ " + key + "GetBio @Mention" + "\n" + \
-				"╠ " + key + "GetPicture @Mention" + "\n" + \
-				"╠ " + key + "GetVideoProfile @Mention" + "\n" + \
-				"╠ " + key + "GetCover @Mention" + "\n" + \
-				"╠ " + key + "CloneProfile @Mention" + "\n" + \
+				"╠ " + key + "GetMid @Tag" + "\n" + \
+				"╠ " + key + "GetName @Tag" + "\n" + \
+				"╠ " + key + "GetBio @Tag" + "\n" + \
+				"╠ " + key + "GetPicture @Tag" + "\n" + \
+				"╠ " + key + "GetVideoProfile @Tag" + "\n" + \
+				"╠ " + key + "GetCover @Tag" + "\n" + \
+				"╠ " + key + "CloneProfile @Tag" + "\n" + \
 				"╠ " + key + "RestoreProfile" + "\n" + \
 				"╠ " + key + "BackupProfile" + "\n" + \
 				"╠ " + key + "FriendList" + "\n" + \
-				"╠ " + key + "FriendInfo 「Number」" + "\n" + \
+				"╠ " + key + "FriendInfo 「Nomer」" + "\n" + \
 				"╠ " + key + "BlockList" + "\n" + \
 				"╠ " + key + "FriendBroadcast" + "\n" + \
 				"╠ " + key + "ChangePictureProfile" + "\n" + \
-				"╠══[ Group Command ]" + "\n" + \
-				"╠ " + key + "ChangeGroupName: 「Text」" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Group Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
+				"╠ " + key + "ChangeGroupName: 「Krisnabiru」" + "\n" + \
 				"╠ " + key + "GroupCreator" + "\n" + \
 				"╠ " + key + "GroupID" + "\n" + \
 				"╠ " + key + "GroupName" + "\n" + \
@@ -191,17 +207,21 @@ def menuHelp():
 				"╠ " + key + "MemberList" + "\n" + \
 				"╠ " + key + "PendingList" + "\n" + \
 				"╠ " + key + "GroupInfo" + "\n" + \
-				"╠ " + key + "GroupBroadcast: 「Text」" + "\n" + \
+				"╠ " + key + "GroupBroadcast: 「Krisnabiru」" + "\n" + \
 				"╠ " + key + "ChangeGroupPicture" + "\n" + \
-				"╠══[ Special Command ]" + "\n" + \
-				"╠ " + key + "Mimic 「On/Off」" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Special Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
+				"╠ " + key + "Mimic 「On / Off」" + "\n" + \
 				"╠ " + key + "MimicList" + "\n" + \
-				"╠ " + key + "MimicAdd @Mention" + "\n" + \
-				"╠ " + key + "MimicDel @Mention" + "\n" + \
+				"╠ " + key + "MimicAdd @Tag" + "\n" + \
+				"╠ " + key + "MimicDel @Tag" + "\n" + \
 				"╠ " + key + "Mention" + "\n" + \
-				"╠ " + key + "Lurking 「On/Off」" + "\n" + \
-				"╠ " + key + "Lurking" + "\n" + \
-				"╠══[ Media Command ]" + "\n" + \
+				"╠ " + key + "Sider「Oɴ / Off / Reset」" + "\n" + \
+				"╠ " + key + "ViewLastSeen" + "\n" + \
+				"╚═╗" + "\n" + \
+				"║✪╠➤▸› [ Media Command ]" + "\n" + \
+				"╔═╝" + "\n" + \
 				"╠ " + key + "InstaInfo 「Username」" + "\n" + \
 				"╠ " + key + "InstaStory 「Username」" + "\n" + \
 				"╠ " + key + "Image Coursel" + "\n" + \
@@ -210,7 +230,10 @@ def menuHelp():
 				"╠ " + key + "SearchMusic 「Search」" + "\n" + \
 				"╠ " + key + "SearchLyric 「Search」" + "\n" + \
 				"╠ " + key + "SearchYoutube 「Search」" + "\n" + \
-				"╚══[ Copyright @Zero-Cool404 ]"
+				"╠══════════════" + "\n" + \
+				"║               By : Krisnabiru 􀄃􀆖cony kiss􏿿" + "\n" + \
+				"║     https://tiny.cc/Krisnabiru" + "\n" + \
+				"╚══════════════"
 	return menuHelp
 
 def menuTextToSpeech():
@@ -218,7 +241,12 @@ def menuTextToSpeech():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuTextToSpeech =	"╔══[ Text To Speech ]" + "\n" + \
+	menuTextToSpeech =			"╔══════════════" + "\n" + \
+						"║              􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿" + "\n" + \
+						"╠══════════════" + "\n" + \
+						"╚═╗" + "\n" + \
+						"║✪╠➤▸› [ Help TextToSpeech ]" + "\n" + \
+						"╔═╝" + "\n" + \
 						"╠ " + key + "af : Afrikaans" + "\n" + \
 						"╠ " + key + "sq : Albanian" + "\n" + \
 						"╠ " + key + "ar : Arabic" + "\n" + \
@@ -272,8 +300,11 @@ def menuTextToSpeech():
 						"╠ " + key + "uk : Ukrainian" + "\n" + \
 						"╠ " + key + "vi : Vietnamese" + "\n" + \
 						"╠ " + key + "cy : Welsh" + "\n" + \
-						"╚══[ Jangan Typo ]" + "\n" + "\n\n" + \
-						"Contoh : " + key + "say-id chiken"
+						"╠➤ [ Contoh : " + key + "say-id Krisnabiru ]" + "\n" + \
+						"╠══════════════" + "\n" + \
+						"║               By : Krisnabiru 􀄃􀆖cony kiss􏿿" + "\n" + \
+						"║     https://tiny.cc/Krisnabiru" + "\n" + \
+						"╚══════════════"
 	return menuTextToSpeech
 
 def menuTranslate():
@@ -281,7 +312,12 @@ def menuTranslate():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuTranslate =	"╔══[ Translate ]" + "\n" + \
+	menuTranslate =			"╔══════════════" + "\n" + \
+					"║              􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿" + "\n" + \
+					"╠══════════════" + "\n" + \
+					"╚═╗" + "\n" + \
+					"║✪╠➤▸› [ Help Translate ]" + "\n" + \
+					"╔═╝" + "\n" + \
 					"╠ " + key + "af : afrikaans" + "\n" + \
 					"╠ " + key + "sq : albanian" + "\n" + \
 					"╠ " + key + "am : amharic" + "\n" + \
@@ -388,8 +424,11 @@ def menuTranslate():
 					"╠ " + key + "zu : zulu" + "\n" + \
 					"╠ " + key + "fil : Filipino" + "\n" + \
 					"╠ " + key + "he : Hebrew" + "\n" + \
-					"╚══[ Jangan Typo ]" + "\n" + "\n\n" + \
-					"Contoh : " + key + "tr-id chiken"
+					"╠➤ [ Contoh : " + key + "say-id Krisnabiru ]" + "\n" + \
+					"╠══════════════" + "\n" + \
+					"║               By : Krisnabiru 􀄃􀆖cony kiss􏿿" + "\n" + \
+					"║     https://tiny.cc/Krisnabiru" + "\n" + \
+					"╚══════════════"
 	return menuTranslate
 
 def clientBot(op):
@@ -434,22 +473,22 @@ def clientBot(op):
 						to = receiver
 					if msg.contentType == 0:
 						if cmd == "logout":
-							client.sendMessage(to, "Berhasil mematikan selfbot")
+							client.sendMessage(to, "Berhasil mematikan bot, thanks to Krisnabiru")
 							sys.exit("[ INFO ] BOT SHUTDOWN")
 							return
 						elif cmd == "restart":
-							client.sendMessage(to, "Berhasil mereset bot")
+							client.sendMessage(to, "Bot telah di reset")
 							restartBot()
 						elif cmd == "speed":
 							start = time.time()
-							client.sendMessage(to, "Menghitung kecepatan...")
+							client.sendMessage(to, "Please wait . . .")
 							elapsed_time = time.time() - start
 							client.sendMessage(to, "Kecepatan mengirim pesan {} detik".format(str(elapsed_time)))
 						elif cmd == "runtime":
 							timeNow = time.time()
 							runtime = timeNow - clientStart
 							runtime = timeChange(runtime)
-							client.sendMessage(to, "Selfbot telah aktif selama {}".format(str(runtime)))
+							client.sendMessage(to, "Bot telah aktif selama {}".format(str(runtime)))
 						elif cmd.startswith("setkey: "):
 							sep = text.split(" ")
 							key = text.replace(sep[0] + " ","")
@@ -471,31 +510,31 @@ def clientBot(op):
 
 						elif cmd == "status":
 							try:
-								ret_ = "╔══[ Status ]"
-								if settings["autoAdd"] == True: ret_ += "\n╠ Auto Add : ON"
-								else: ret_ += "\n╠ Auto Add : OFF"
-								if settings["autoJoin"] == True: ret_ += "\n╠ Auto Join : ON"
-								else: ret_ += "\n╠ Auto Join : OFF"
-								if settings["autoJoin"] == True: ret_ += "\n╠ Auto Join Ticket : ON"
-								else: ret_ += "\n╠ Auto Join Ticket : OFF"
-								if settings["autoRead"] == True: ret_ += "\n╠ Auto Read : ON"
-								else: ret_ += "\n╠ Auto Read : OFF"
-								if settings["autoRespon"] == True: ret_ += "\n╠ Auto Respon : ON"
-								else: ret_ += "\n╠ Auto Respon : OFF"
-								if settings["checkContact"] == True: ret_ += "\n╠ Check Contact : ON"
-								else: ret_ += "\n╠ Check Contact : OFF"
-								if settings["checkPost"] == True: ret_ += "\n╠ Check Post : ON"
-								else: ret_ += "\n╠ Check Post : OFF"
-								if settings["checkSticker"] == True: ret_ += "\n╠ Check Sticker : ON"
-								else: ret_ += "\n╠ Check Sticker : OFF"
-								if settings["detectUnsend"] == True: ret_ += "\n╠ Detect Unsend : ON"
-								else: ret_ += "\n╠ Detect Unsend : OFF"
-								if settings["setKey"] == True: ret_ += "\n╠ Set Key : ON"
-								else: ret_ += "\n╠ Set Key : OFF"
+								ret_ = "╔══[ S T A T U S ]"
+								if settings["autoAdd"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Add"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Add"
+								if settings["autoJoin"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Join"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Join"
+								if settings["autoJoin"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Join Ticket
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Join Ticket"
+								if settings["autoRead"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Read"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Read"
+								if settings["autoRespon"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Respon"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Respon"
+								if settings["checkContact"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Contact"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Contact"
+								if settings["checkPost"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Post"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Post
+								if settings["checkSticker"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Sticker"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Sticker"
+								if settings["detectUnsend"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Detect Unsend"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Detect Unsend"
+								if settings["setKey"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Set Key"
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Set Key"
 								ret_ +="\n╠ Auto Add Message : {}".format(settings["autoAddMessage"])
 								ret_ +="\n╠ Auto Join Message : {}".format(settings["autoJoinMessage"])
 								ret_ +="\n╠ Auto Respon Message : {}".format(settings["autoResponMessage"])
-								ret_ += "\n╚══[ Status ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
 								logError(error)
@@ -661,7 +700,7 @@ def clientBot(op):
 							result += "\n╠ Status Message : {}".format(contact.statusMessage)
 							result += "\n╠ Picture Profile : http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 							result += "\n╠ Cover : {}".format(str(cover))
-							result += "\n╚══[ Finish ]"
+							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 							client.sendMention(to, result, [sender])
 						elif cmd == "mymid":
@@ -822,7 +861,7 @@ def clientBot(op):
 								result += "\n╠ Status Message : {}".format(contact.statusMessage)
 								result += "\n╠ Picture Profile : http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus)
 								result += "\n╠ Cover : {}".format(str(cover))
-								result += "\n╚══[ Finish ]"
+								result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 								client.sendMention(to, result, [contact.mid])
 							except Exception as error:
@@ -861,7 +900,7 @@ def clientBot(op):
 								group.preventedJoinByTicket = False
 								client.updateGroup(group)
 								groupUrl = client.reissueGroupTicket(to)
-								client.sendMessage(to, "Berhasil membuka QR Group\n\nGroupURL : line://ti/g/{}".format(groupUrl))
+								client.sendMessage(to, "Berhasil membuka QR Group\n\nGroup URL : line://ti/g/{}".format(groupUrl))
 						elif cmd == "closeqr":
 							if msg.toType == 2:
 								group = client.getGroup(to)
@@ -939,7 +978,7 @@ def clientBot(op):
 								ret_ += "\n╠ Jumlah Pending : {}".format(groupPending)
 								ret_ += "\n╠ Group Qr : {}".format(groupQr)
 								ret_ += "\n╠ Group Ticket : {}".format(groupTicket)
-								ret_ += "\n╚══[ Success ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMention(to, str(ret_), [groupCreator])
 							except:
@@ -951,7 +990,7 @@ def clientBot(op):
 								ret_ += "\n╠ Jumlah Pending : {}".format(groupPending)
 								ret_ += "\n╠ Group Qr : {}".format(groupQr)
 								ret_ += "\n╠ Group Ticket : {}".format(groupTicket)
-								ret_ += "\n╚══[ Success ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMessage(to, str(ret_))
 						elif cmd.startswith("groupbroadcast: "):
@@ -963,7 +1002,7 @@ def clientBot(op):
 							client.sendMessage(to, "Berhasil broadcast ke {} group".format(str(len(groups))))
 
 
-						elif cmd == 'mentionall':
+						elif cmd == 'mention':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -977,7 +1016,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. @!".format(str(no))
 								ret_ += "\n╚══[ Total {} Members]".format(str(len(dataMid)))
 								client.sendMention(to, ret_, dataMid)
-						elif cmd == "lurking on":
+						elif cmd == "sider on":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1008,7 +1047,7 @@ def clientBot(op):
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
 								client.sendMessage(to, "Set reading point : \n{}".format(readTime))
-						elif cmd == "lurking off":
+						elif cmd == "sider off":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1030,7 +1069,7 @@ def clientBot(op):
 								except:
 									pass
 								client.sendMessage(to, "Delete reading point : \n{}".format(readTime))
-						elif cmd == "lurking":
+						elif cmd == "viewlastseen":
 							if to in read['readPoint']:
 								if read["readMember"][to] == []:
 									return client.sendMessage(to, "Tidak Ada Sider")
@@ -1146,7 +1185,7 @@ def clientBot(op):
 							result += "\n╠ Following : {}".format(data["result"]["following"])
 							result += "\n╠ Private : {}".format(data["result"]["private"])
 							result += "\n╠ Post : {}".format(data["result"]["mediacount"])
-							result += "\n╚══[ Finish ]"
+							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 							client.sendImageWithURL(to, data["result"]["url"])
 							client.sendMessage(to, result)
 						elif cmd.startswith("instastory "):
@@ -1171,7 +1210,7 @@ def clientBot(op):
 							result += "\n╠ Author : {}".format(data["result"]["author"])
 							result += "\n╠ Category : {}".format(data["result"]["category"])
 							result += "\n╠ Quote : {}".format(data["result"]["quote"])
-							result += "\n╚══[ Finish ]"
+							result += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 							client.sendMessage(to, result)
 						elif cmd.startswith("say-"):
 							sep = text.split("-")
@@ -1251,7 +1290,7 @@ def clientBot(op):
 									ret_ += "\n╠ Album : {}".format(str(data["result"]["album"]))
 									ret_ += "\n╠ Size : {}".format(str(data["result"]["size"]))
 									ret_ += "\n╠ Link : {}".format(str(data["result"]["mp3"][0]))
-									ret_ += "\n╚══[ Finish ]"
+									ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 									client.sendImageWithURL(to, str(data["result"]["img"]))
 									client.sendMessage(to, str(ret_))
 									client.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
@@ -1304,7 +1343,7 @@ def clientBot(op):
 							result = translator.translate(txt, dest=lang)
 							client.sendMessage(to, result.text)
 						if text.lower() == "mykey":
-							client.sendMessage(to, "Keycommand yang diset saat ini : 「{}」".format(str(settings["keyCommand"])))
+							client.sendMessage(to, "Keycommand saat ini : 「{}」".format(str(settings["keyCommand"])))
 						elif text.lower() == "setkey on":
 							if settings["setKey"] == True:
 								client.sendMessage(to, "Setkey telah aktif")
@@ -1354,7 +1393,7 @@ def clientBot(op):
 							ret_ += "\n╠ STICKER PACKAGES ID : {}".format(pkg_id)
 							ret_ += "\n╠ STICKER VERSION : {}".format(stk_ver)
 							ret_ += "\n╠ STICKER URL : line://shop/detail/{}".format(pkg_id)
-							ret_ += "\n╚══[ Finish ]"
+							ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 							client.sendMessage(to, str(ret_))
 					elif msg.contentType == 13:
 						if settings["checkContact"] == True:
@@ -1367,7 +1406,7 @@ def clientBot(op):
 								ret_ += "\n╠ Bio : {}".format(str(contact.statusMessage))
 								ret_ += "\n╠ Gambar Profile : http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
 								ret_ += "\n╠ Gambar Cover : {}".format(str(cover))
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus)))
 								client.sendMessage(to, str(ret_))
 							except:
@@ -1406,7 +1445,7 @@ def clientBot(op):
 								if "text" in msg.contentMetadata:
 									text = "\n╠ Tulisan : {}".format(str(msg.contentMetadata["text"]))
 									ret_ += text
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendMessage(to, str(ret_))
 							except:
 								client.sendMessage(to, "Post tidak valid")
@@ -1508,7 +1547,7 @@ def clientBot(op):
 								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Text"
 								ret_ += "\n╠ Text : {}".format(unsend[sender]["text"])
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendMention(to, ret_, [contact.mid])
 								del unsend[sender]
 							except:
@@ -1522,7 +1561,7 @@ def clientBot(op):
 								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Image"
 								ret_ += "\n╠ Text : None"
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ 􂘁􀄋K􏿿􂘁􀄒R􏿿􂘁􀄉I􏿿􂘁􀄓S􏿿􂘁􀄓S􏿿 ]""
 								client.sendMention(to, ret_, [contact.mid])
 								client.sendImage(to, unsend[sender]["image"])
 								client.deleteFile(unsend[sender]["image"])
