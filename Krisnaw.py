@@ -515,7 +515,7 @@ def clientBot(op):
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Add"
 								if settings["autoJoin"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Join"
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Join"
-								if settings["autoJoin"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Join Ticket
+								if settings["autoJoin"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Join Ticket"
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Join Ticket"
 								if settings["autoRead"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Auto Read"
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Auto Read"
@@ -524,7 +524,7 @@ def clientBot(op):
 								if settings["checkContact"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Contact"
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Contact"
 								if settings["checkPost"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Post"
-								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Post
+								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Post"
 								if settings["checkSticker"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Check Sticker"
 								else: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄆F􏿿􂘁􀄆F􏿿 ] Check Sticker"
 								if settings["detectUnsend"] == True: ret_ += "\n╠══[ 􂘁􀄏O􏿿􂘁􀄎N􏿿 ] Detect Unsend"
